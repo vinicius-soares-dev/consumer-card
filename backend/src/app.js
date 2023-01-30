@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-// node não estava lendo as variáveis de ambiente, então essa linha de código solucionou esse problema
+// node não estava detectando as variáveis de ambiente, então essa linha de código solucionou esse problema
 require('dotenv').config({ debug: true });
 
 
