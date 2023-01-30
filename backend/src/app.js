@@ -1,7 +1,19 @@
 const express = require('express');
 const app = express();
+require('dotenv').config({ debug: true });
 const PORT = 3333 || process.env.PORT;
-const routes = require('./routes/routes');
+const routes = require('./routes');
+
+const mongoose = require('mongoose');
+mongoose.set("strictQuery", true);
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.hwtwwj5.mongodb.net/?retryWrites=true&w=majority`)
+    .then(() => {
+        console.log('database connected');
+    })
+    .catch((e) => {
+        console.log('error connected database' + e);
+    });
+
 
 
 app.use(express.json());
