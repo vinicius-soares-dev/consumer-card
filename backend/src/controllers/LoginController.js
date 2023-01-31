@@ -13,6 +13,5 @@ module.exports = {
         return res.status(200).json(created);
     }
  
- 
 
 };
