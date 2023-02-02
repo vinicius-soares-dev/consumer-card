@@ -1,0 +1,145 @@
+:root {
+    --font-main: 'Roboto', sans-serif;
+    --color-background: #012E40;
+    --text-color: #F2E3D5;
+    --button-color: #026773;
+    --button-hover-color: #3CA6A6;
+    --box-color: #024959;
+}
+
+form  > .signIn-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form > .signIn-block > .Login  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.7em;
+    background: var(--box-color);
+    margin: 2em;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+form > .signIn-block > .signUp  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    background: var(--box-color);
+    margin: 2em;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+
+
+form > .signIn-block > .Login > h2 {
+    font-size: 2em;
+    font-family: var(--font-main);
+    color: var(--text-color);
+    letter-spacing: 0.3em;
+    margin: 1em;
+    text-shadow: 2px 0px 2px #000;
+    
+}
+
+form > .signIn-block > .signUp > h2{
+    font-size: 2em;
+    font-family: var(--font-main);
+    color: var(--text-color);
+    letter-spacing: 0.3em;
+    margin: 1em;
+    text-shadow: 2px 0px 2px #000;
+    
+}
+
+form > .signIn-block > .Login > label {
+    font-family: var(--font-main);
+    margin-bottom: 0.5em;
+    color: var(--text-color);
+
+}
+
+form > .signIn-block > .signUp > label {
+    font-family: var(--font-main);
+    margin-bottom: 0.5em;
+    color: var(--text-color);
+
+}
+
+form > .signIn-block > .Login > input {
+    padding:5px; 
+    font-size:17px; 
+    border-width:2px; 
+    border-radius:10px; 
+    border-style:solid; 
+    background-color: transparent; 
+    border-color: var(--button-hover-color);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); 
+    text-shadow:0px 0px 1px rgba(42,42,42,.72);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+form > .signIn-block > .signUp > input {
+    padding:5px; 
+    font-size:17px; 
+    border-width:2px; 
+    border-radius:10px; 
+    border-style:solid; 
+    background-color: transparent; 
+    border-color: var(--button-hover-color);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); 
+    text-shadow:0px 0px 1px rgba(42,42,42,.72);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+form > .signIn-block > .Login > input:focus {
+    background: var(--button-color);
+    border: none;
+}
+
+form > .signIn-block > .signUp > input:focus {
+    background: var(--button-color);
+    border: none;
+}
+
+form > .signIn-block > .Login > button {
+    margin: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font-main);
+}
+
+form > .signIn-block > .signUp > button {
+    margin: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font-main);
+}
+
+form > .signIn-block > .Login > button:hover {
+    background: var(--button-hover-color);
+    cursor: pointer;
+}
+
+form > .signIn-block > .signUp > button:hover {
+    background: var(--button-hover-color);
+    cursor: pointer;
+}
+
